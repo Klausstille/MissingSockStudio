@@ -1,0 +1,348 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>Missing Sock Studio</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="stylesheet" href="css/normalize.min.css">
+        <link rel="stylesheet" href="css/bootstrap.css">
+        <link rel="stylesheet" href="css/font-awesome.min.css">
+        <link rel="stylesheet" href="css/animate.css">
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/swipebox.css">
+
+       <style> 
+    @font-face {
+    font-family: 'texgyrescholaregular';
+    src: url('fonts/texgyreschola_regular_macroman/texgyreschola-regular-webfont.eot');
+    src: url('fonts/texgyreschola_regular_macroman/texgyreschola-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/texgyreschola_regular_macroman/texgyreschola-regular-webfont.woff') format('woff'),
+         url('fonts/texgyreschola_regular_maman/texgyreschola-regular-webfont.ttf') format('truetype'),
+         url('fonts/texgyreschola_regular_macroman/texgyreschola-regular-webfont.svg#texgyrescholaregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    }
+
+    @font-face {
+        font-family: 'texgyrescholaitalic';
+        src: url('fonts/texgyreschola_italic_macroman/texgyreschola-italic-webfont.eot');
+        src: url('fonts/texgyreschola_italic_macroman/texgyreschola-italic-webfont.eot?#iefix') format('embedded-opentype'),
+             url('fonts/texgyreschola_italic_macroman/texgyreschola-italic-webfont.woff') format('woff'),
+             url('fonts/texgyreschola_italic_macroman/texgyreschola-italic-webfont.ttf') format('truetype'),
+             url('fonts/texgyreschola_italic_macroman/texgyreschola-italic-webfont.svg#texgyrescholaitalic') format('svg');
+        font-weight: normal;
+        font-style: normal;
+    }
+
+
+
+    </style>
+
+        <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+
+        <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js"></script>
+        
+        <script type="text/javascript">
+            // When the window has finished loading create our google map below
+            google.maps.event.addDomListener(window, 'load', init);
+        
+            function init() {
+                // Basic options for a simple Google Map
+                // For more options see: https://developers.google.com/maps/documentation/javascript/reference#MapOptions
+                var mapOptions = {
+                    // How zoomed in you want the map to start at (always required)
+                    zoom: 11,
+
+                    // The latitude and longitude to center the map (always required)
+                    center: new google.maps.LatLng(40.6700, -73.9400), // New York
+
+                    // How you would like to style the map. 
+                    // This is where you would paste any style found on Snazzy Maps.
+                    styles: [{"featureType":"road","elementType":"labels","stylers":[{"visibility":"on"}]},{"featureType":"poi","stylers":[{"visibility":"off"}]},{"featureType":"administrative","stylers":[{"visibility":"off"}]},{"featureType":"road","elementType":"geometry.fill","stylers":[{"color":"#000000"},{"weight":1}]},{"featureType":"road","elementType":"geometry.stroke","stylers":[{"color":"#000000"},{"weight":0.8}]},{"featureType":"landscape","stylers":[{"color":"#ffffff"}]},{"featureType":"water","stylers":[{"visibility":"off"}]},{"featureType":"transit","stylers":[{"visibility":"off"}]},{"elementType":"labels","stylers":[{"visibility":"off"}]},{"elementType":"labels.text","stylers":[{"visibility":"on"}]},{"elementType":"labels.text.stroke","stylers":[{"color":"#ffffff"}]},{"elementType":"labels.text.fill","stylers":[{"color":"#000000"}]},{"elementType":"labels.icon","stylers":[{"visibility":"on"}]}]
+                };
+
+                // Get the HTML DOM element that will contain your map 
+                // We are using a div with id="map" seen below in the <body>
+                var mapElement = document.getElementById('map');
+
+                // Create the Google Map using our element and options defined above
+                var map = new google.maps.Map(mapElement, mapOptions);
+
+                // Let's also add a marker while we're at it
+                var marker = new google.maps.Marker({
+                    position: new google.maps.LatLng(40.6700, -73.9400),
+                    map: map,
+                    title: 'Snazzy!'
+                });
+            }
+        </script>
+
+    </head>
+
+    <body data-spy="scroll" data-target=".navbar">
+
+        <header>
+
+<div class="border-top"></div>
+<div class="border-bottom"></div>
+<div class="border-left"></div>
+<div class="border-right"></div>
+
+
+            <nav class="navbar navbar-default navbar-fixed-top">
+                <div class="container">
+                            <a data-scroll href="#carousel">  
+                            <div class="logo">
+                              <li><img src="img/logo.png" width="35px"></li>
+                            <div class="logotext">
+                            <li>Missing Sock Studio</li>
+                            </div>
+                            </div>
+                            </a>
+
+                 <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only">Toggle Navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button> 
+                 </div><!--.navbar-header -->
+
+                    <div class="navbar-collapse collapse">
+                        <ul class="nav">
+
+                            <li><a data-scroll href="#contact">Where We Are</a></li>
+                            <li><a data-scroll href="#whoweare">Who We Are</a></li>
+                            <li><a data-scroll href="#services">What We Offer</a></li>
+                            <li><a data-scroll href="#about">Our Mission</a></li>
+                        </ul>
+                    </div><!--.navbar-collapse -->
+                 </div>
+
+            </nav>
+        </header>
+
+<div id="drag">
+<img src="img/bg-09.png">
+<img src="img/bg-10.png">
+<img src="img/bg-11.png">
+<img src="img/bg-12.png">
+<img src="img/bg-13.png">
+<img src="img/bg-14.png">
+<img src="img/bg-15.png">
+<img src="img/bg-16.png">
+<img src="img/bg-17.png">
+<img src="img/bg-18.png">
+<img src="img/bg-19.png">
+<img src="img/bg-20.png">
+<img src="img/bg-21.png">
+<img src="img/bg-22.png">
+<img src="img/bg-23.png">
+<img src="img/bg-24.png">
+<img src="img/bg-25.png">
+<img src="img/bg-26.png">
+<img src="img/bg-27.png">
+<img src="img/bg-28.png">
+</div>
+
+        <section id="carousel" class="carousel slide carousel-fade" data-ride="carousel">
+            <div class="carousel-inner">
+                
+                <div class="item active">
+                        <h5>Missing<br>Sock<br>Studio</h5>
+                </div>
+
+                <div class="item">
+                        <h2>A happy and respected<br>craftsman or woman makes<br>better clothes<br>– Ahlaiya Yung –</h2>
+                </div>
+
+                <div class="item">
+                        <h2>Coming together is a beginning<br>Keeping together is progress<br>Working together is success<br>– Henry Ford –</h2>
+                </div>
+
+                <div class="item">
+                        <h2>MISSING SOCK STUDIO<br>IS WHERE DESIGN<br>MEETS CRAFTSMANSHIP<br>– Ahlaiya Yung –</h2>
+                </div>
+
+            </div>     
+
+            <a class="left carousel-control" href="#carousel" role="button" data-slide="prev">
+                <span class="glyphicon glyphicon-menu-left"></span>
+            </a>            
+            <a class="right carousel-control" href="#carousel" role="button" data-slide="next">
+                <span class="glyphicon glyphicon-menu-right"></span>
+            </a>
+
+            <ol class="carousel-indicators">
+                <li data-target="#carousel" data-slide-to="0" class="active"></li>
+                <li data-target="#carousel" data-slide-to="1"></li>
+                <li data-target="#carousel" data-slide-to="2"></li>
+            </ol>
+
+        </section><!--#slider -->
+
+        <section id="about" class="about">
+            <div class="container">
+                        <h2 class="headline"></h2>
+                <div class="row">
+                    <div class="col-sm-4">
+                        <div class="left-circle">
+                            <div>
+                                <h2>Western<br>Market<sup>1</sup></h2>
+                            </div>
+                        </div>
+                    </div>                             
+                    
+                    <div class="col-sm-4">
+                        <div class="middle-circle">
+                            <div>
+                                <h2>Missing<br>Sock<br>Studio</h2>
+                            </div>
+                        </div>
+                     </div>                                   
+                    
+                    <div class="col-sm-4">  
+                        <div class="right-circle">
+                            <div>
+                                <h2>China<sup>2</sup></h2>
+                            </div>
+                        </div>
+                    </div>                    
+
+                    <div class="notes col-sm-6">
+                        <sup>1</sup>Western designers are still looking for more affordable production but are expecting much higher quality and ethical standards for their money. <br>Smaller, more experimental Western brands lack the necessary knowledge and security to enter the Chinese market.
+                        </div>
+                       <div class="notes-right col-sm-6">
+                        <sup>2</sup>China’s own fashion scene is still relatively uncultivated in respect of foreign markets and has yet to secure its own recognisable identity.<br>The Chinese fashion consumer is becoming increasingly sophisticated.
+                        </div>
+
+                </div><!--./row -->
+ 
+
+            </div><!--./container -->
+        </section><!--#about -->
+
+
+      <!--  <section id="team" class="team">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="content-news">
+                        <div class="stuff">
+                            <img class="img-responsive" src="img/bgrd_dots.png">
+                        </div><!--./stuff -->
+                  </div><!--./content-news -->
+              </div><!--./row -->
+         </div><!--./container-fluid -->
+        </section><!--#news -->
+
+        <section id="services" class="services">
+            <div class="container">
+                    <h2 class="headline"></h2>
+                <div class="row">
+                    <div class="content">
+                   </div>
+                </div><!--./row -->
+            </div><!--./container -->
+        </section><!--#project -->
+
+
+
+        <section id="clothing" class="clothing">
+            <div class="title"><h2 class="clothing text-center">Missing Sock Studio is where Design meets craftsmanship</h2> </div>
+            <div class="subtext"><h4 class="clothing text-center">Missing Sock Studio was founded in 2000 by Ahlaiya Yung and Nana Aganovich, graduates of London’s prestigious Central Saint Martins school. Originally based in Shanghai the facility relocated to Shenzhen in 2002 to benefit from the proximity of Hong Kong’s fabric market and its strong logistical and international business network.</h4></div>
+        </section><!--#clothing -->
+
+        <section id="jewellery" class="jewellery">
+            <div class="title-left"><h2 class="jewellery text-center">Missing Sock Studio is where Design meets craftsmanship</h2> </div>
+            <div class="subtext-left"><h4 class="jewellery text-center">Missing Sock Studio was founded in 2000 by Ahlaiya Yung and Nana Aganovich, graduates of London’s prestigious Central Saint Martins school. Originally based in Shanghai the facility relocated to Shenzhen in 2002 to benefit from the proximity of Hong Kong’s fabric market and its strong logistical and international business network.</h4></div>
+        </section><!--#jewellery -->
+
+        <section id="millenary" class="millenary">
+            <div class="title"><h2 class="millenary text-center">Missing Sock Studio is where Design meets craftsmanship</h2> </div>
+            <div class="subtext"><h4 class="millenary text-center">Missing Sock Studio was founded in 2000 by Ahlaiya Yung and Nana Aganovich, graduates of London’s prestigious Central Saint Martins school. Originally based in Shanghai the facility relocated to Shenzhen in 2002 to benefit from the proximity of Hong Kong’s fabric market and its strong logistical and international business network.</h4></div>
+        </section><!--#millenary -->
+
+        <section id="accessories" class="accessories">
+            <div class="title-left"><h2 class="accessories text-center">Missing Sock Studio is where Design meets craftsmanship</h2> </div>
+            <div class="subtext-left"><h4 class="accessories text-center">Missing Sock Studio was founded in 2000 by Ahlaiya Yung and Nana Aganovich, graduates of London’s prestigious Central Saint Martins school. Originally based in Shanghai the facility relocated to Shenzhen in 2002 to benefit from the proximity of Hong Kong’s fabric market and its strong logistical and international business network.</h4></div>
+        </section><!--#accessories -->
+
+        <section id="whoweare" class="whoweare">
+        <div class="container">
+            <h2 class="headline"></h2>
+                <div class="row">
+                    <div class="content col-sm-6">
+                      <h2>  Missing Sock Studio was founded in 2000 by Ahlaiya Yung and Nana Aganovich, graduates of London’s prestigious Central Saint Martins school. Originally based in Shanghai the facility relocated to Shenzhen in 2002 to benefit from the proximity of Hong Kong’s fabric market and its strong logistical and international business network.
+Missing Sock’s USP was immediately evident in the fact that its founders were both designers rather than factory owners. A designer’s priority will always be quality rather than profit. Their quest for quality led them to make an unusual adjustment to the traditional production process. Rather than opting for the more economical assembly line format they chose to train their seamstresses to construct an entire garment.
+Initially this decision was simply the result of a desire for superior quality but it quickly developed into the core ingredient of the company’s mission statement. <br>
+                  </h2>  </div> 
+                  <div class="content col-sm-6">
+                         <h6>A self-styled ‘aesthactivist’, Ahlaiya Yung has cultivated a career of implementing social change through aesthetics and ethics. From hospitality (Chez Moi, Salon No.10 in Hong Kong), through fashion design studio (Missing Sock Studio), fashion retail (Creatures Fashion Repertoire) to interior and product design (Metasus) Ahlaiya has continually sought to address key social and market issues by questioning the conventions and rediscovering core values that are often lost in this age of high speed development. This unique approach has generated a profile of a true 21st century entrepreneur. Ahlaiya and Nana soon found that the ‘whole garment’ method fostered skill, encouraged learning and most importantly generated a healthy competitive spirit and attention to detail. What began as nothing more than a tactical decision had unexpectedly evolved into a manifesto: a happy and respected craftsman or woman makes better clothes. Since 2009, Ahlaiya has taken sole ownership of Missing Sock and he has cultivated the studio to a standard that has been able to launch the career of his friend and former colleague Nana Aganovich as well as producing collections for a number of independent and experimental European designers: Mother of Pearl, Unconditional...
+                        </h6>
+                  </div>
+
+                </div><!--./row -->
+            </div><!--./container -->
+        </section><!--#whoweare -->
+
+
+
+        <section id="contact" class="contact">
+            <div class="container">
+                <h2 class="headline"></h2>
+               <div class="row">
+   
+   <div class="col-sm-2">
+<h6>
+Missing Sock Studio
+<br>
++852 6712 4965<br>
+<br>
+Opening Hours: <br>
+Tuesday - Saturday, <br>
+12 - 6pm<br>
+<br>
+Lai Chi Kok Road 135<br>
+Hang Mei Building<br>
+Sham Shui Po<br>
+Hong Kong</h6>
+</div>
+
+   <div class="col-sm-10">
+<div id="map"></div>
+    </div>
+
+                </div><!--./row -->
+            </div><!--./container -->
+        </section><!--#contact -->
+
+
+
+
+        <footer>               
+                <div class="social text-center">
+<h2>facebook &nbsp; twitter &nbsp; contact</h2>
+                </div>            
+                <p class="text-center"> Missing Sock Studio <br> Opening Hours: Tuesday - Saturday, 12 - 6pm<br>
+                Phone +852 67124965 | info@missingsockstudio.hk.com
+                </p><!-- /copyright -->
+        </footer>
+
+
+
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
+
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/jquery-1-9-1.js"></script>
+        <script src="js/smooth-scroll.js"></script>
+        <script src="js/jquery-2.1.0.min.js"></script>
+        <script src="js/jquery.swipebox.js"></script>
+        <script src="js/jquery.waypoints.min.js"></script>
+        <script src="js/main.js"></script>
+    </body>
+</html>
